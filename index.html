@@ -30,25 +30,47 @@
     }
    
     
-    .projectdiv {
-      width: 884.88px;
+    .img {
+      width: 864px;
       height: 572px; 
     }
     
-    .projecttext {
-      position: relative;
-      font-family: Tahoma, sans-serif;
-      font-size: 24px;
+    .column {
       float: left;
-      top: 100px;
-      left: 60px;
+      display: inline;
+      width: 50%;
+      height: 572px;
+      background-color: white;
+    }
+    .row::after {
+      content: "";
+      display: table;
+      clear: both;
     }
     
-    .projecttitle{
+    .projecttext{
       position: relative;
-      float: left;
-      top: 105px;
       left: 60px;
+      top: 100px;
+      font-size: 24px;
+      width: 711px;
+    } 
+    
+    .projectheader{
+      position: relative;
+      left: 60px;
+      top: 100px;
+      font-size: 48px;
+      width: 711px;
+    } 
+    
+    .projectbutton{
+      position: relative;
+      left: 60px;
+      top: 100px;
+      font-size: 16px;
+      width: 140px;
+      height: 70px;
     }
     
     
@@ -61,15 +83,50 @@
   </div>
   
   <!-- Project 1 Section -->  
-   
-  <div style="float: left;">
-    <img src="Project1.png" alt="project1" class="projectdiv">
-  </div>
-  
 
-    <p class="projecttext"> Project 1 - UX design </p>
-  
- 
+  <div class="row"> 
+    <div class="column">
+  <img src="Project1.png" alt="project1" class="img"> 
+    </div>
+    <div class="column">
+      <p class="projecttext"> Project 1 - UX design </p>
+      <h1 class="projectheader">Staff Scheduling app</h1>
+      <p class="projecttext">A staff scheduling app designed for individuals managing and scheduling employees in for shifts simply and efficiently. </p>
+      <p class="projecttext">UX RESEARCH // WIREFRAMING // PROTOTYPING // USER TESTING</p>
+      
+      <input type="button" onclick="alert('Hello World!')" value="Learn More" class="projectbutton">
+    </div>
+   </div>
+    
+  <!-- Project 2 Section -->  
+  <div class="row"> 
+    <div class="column">
+  <img src="Project2.png" alt="project1" class="img"> 
+    </div>
+    <div class="column">
+      <p class="projecttext"> Project 2 - Redesign </p>
+      <h1 class="projectheader">Soup Surreal Redesign</h1>
+      <p class="projecttext">A website re-design of a small local business that focuses on creating a more defined and clean modern look. </p>
+      <p class="projecttext">FIGMA//AUTO LAYOUT//DESIGN PRINCIPLES</p>
+      
+      <input type="button" onclick="alert('Hello World!')" value="Learn More" class="projectbutton">
+    </div>
+   </div>
+
+   <!-- Project 3 Section -->  
+  <div class="row"> 
+    <div class="column">
+  <img src="Project3.png" alt="project1" class="img"> 
+    </div>
+    <div class="column">
+      <p class="projecttext"> Project 3 - Team Project </p>
+      <h1 class="projectheader">Staff Scheduling app</h1>
+      <p class="projecttext">A meal planning app created for students to help save money and prepare meals with ease.  </p>
+      <p class="projecttext">TEAM WORK//UX RESEARCH//HI-FIDELITY PROTOTYPING</p>
+      
+      <input type="button" onclick="alert('Hello World!')" value="Learn More" class="projectbutton">
+    </div>
+   </div>
   
 </head>
   
